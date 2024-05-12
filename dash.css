@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, #00BCD4, #60A325, #CED51B);
+}
+
+.dashboard {
+    text-align: center;
+    margin-top: 10dp; /* Adjust top margin as needed */
+}
+.dashboard h1 {
+    margin-bottom: 20px;
+}
+.buttons {
+    margin-top: 20px; /* Adjust top margin between heading and buttons */
+}
+
+button {
+    display: block; /* Display buttons as block elements */
+    width: 200px; /* Adjust button width as needed */
+    padding: 10px 20px;
+    margin: 20px auto; /* Center buttons horizontally */
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    background-color: #25bb2c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
