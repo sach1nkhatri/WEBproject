@@ -3,47 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Player</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="music-player">
-            <div class="player-controls">
-                <button class="play-btn"><i class="fas fa-play"></i></button>
-                <button class="pause-btn"><i class="fas fa-pause"></i></button>
-                <button class="repeat-btn"><i class="fas fa-redo-alt"></i></button>
-                <button class="love-btn"><i class="fas fa-heart"></i></button>
+        <img src="account.png" alt="Image" class="top-image">
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
             </div>
-            <div class="song-info">
-                <div class="song-title"></div>
-                <div class="duration"></div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
             </div>
-            <audio class="audio-player" src="kewal.wav"></audio>
-            <div class="progress-container">
-                <div class="progress-bar"></div>
+            <div class="form-group">
+                <button type="submit" id="loginBtn">Login</button>
             </div>
-        </div>
-
-        <!-- Additional music players -->
-        <div class="music-player">
-            <div class="player-controls">
-                <button class="play-btn"><i class="fas fa-play"></i></button>
-                <button class="pause-btn"><i class="fas fa-pause"></i></button>
-                <button class="repeat-btn"><i class="fas fa-redo-alt"></i></button>
-                <button class="love-btn"><i class="fas fa-heart"></i></button>
-            </div>
-            <div class="song-info">
-                <div class="song-title"></div>
-                <div class="duration"></div>
-            </div>
-            <audio class="audio-player" src="another_song.wav"></audio>
-            <div class="progress-container">
-                <div class="progress-bar"></div>
+        </form>
+        <div class="social-login">
+            <span>Social Login</span>
+            <div class="social-icons">
+                <img src="google.png" alt="Google">
+                <img src="facebook.png" alt="Facebook">
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        document.getElementById('loginBtn').addEventListener('click', function() {
+            // Redirect to another page
+            window.location.href = 'musicweb.html';
+        });
+    </script>
 </body>
 </html>
+
